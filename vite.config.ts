@@ -3,7 +3,18 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
-import siteConfiguration from './.figma/make/site.json'
+const siteConfiguration = {
+  title: "Инга Парилова — SMM · Content · Creative",
+  description:
+    "Портфолио Инги Париловой: SMM, контент, креатив и визуальные решения для брендов.",
+  language: "ru",
+  robots: {
+    index: true,
+  },
+  accessibility: {
+    addBypassLinks: false,
+  },
+}
 
 
 // Vite config — https://vitejs.dev/config/
